@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Leandre Bwan Hotel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo"><div class="logo-icon">🏨</div>Leandre<span>Bwan Hotel</span></a>
+            <div class="nav-wrapper">
+                <nav><ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="order.php">Order</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                </ul></nav>
+                <div class="user-account"><button class="user-btn" onclick="openAuthModal()"><i class="fas fa-user-circle"></i> Account</button></div>
+                <div class="lang-switcher"><button class="lang-btn">🌐 EN ▼</button><div class="lang-dropdown"><a href="#">English</a><a href="#">Kinyarwanda</a></div></div>
+            </div>
+            <div class="menu-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </header>
+
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-content"><h1>About <span>Leandre Bwan Hotel</span></h1><p>Luxury, Comfort & Rwandan Hospitality</p></div>
+    </section>
+
+    <section class="section fade-up">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image"><img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600" alt="Hotel exterior"></div>
+                <div class="about-content">
+                    <h3>Our Story</h3>
+                    <p>Leandre Bwan Hotel is a premier destination in Huye District, offering elegant rooms, gourmet dining, and exceptional service. Whether for business or leisure, we ensure a memorable stay with modern amenities and warm Rwandan culture.</p>
+                    <p>Our restaurant serves fresh local ingredients and international delicacies prepared by top chefs. We are committed to making every guest feel at home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">... same as index footer ...</footer>
+    <div class="modal-overlay" id="authModal">... same modal ...</div>
+    <script src="js/script.js"></script>
+    <script>function openAuthModal(){document.getElementById('authModal').classList.add('active');} function closeAuthModal(){document.getElementById('authModal').classList.remove('active');} document.getElementById('authModal')?.addEventListener('click',(e)=>{if(e.target===e.currentTarget)closeAuthModal();});</script>
+</body>
+</html>

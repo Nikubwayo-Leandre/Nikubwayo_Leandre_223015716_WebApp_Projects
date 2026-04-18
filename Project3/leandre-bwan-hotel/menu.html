@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Menu - Leandre Bwan Hotel</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head>
+<body>
+    <header class="header">... same header ...</header>
+    <section class="hero" style="min-height: 50vh;"><div class="hero-content"><h1>Our <span>Menu</span></h1><p>Fresh Fish • Juices • Drinks</p></div></section>
+    <section class="section"><div class="container">
+        <table class="menu-table">
+            <thead><tr><th>Category</th><th>Item Name</th><th>Description</th><th>Price (USD)</th></tr></thead>
+            <tbody>
+                <tr onclick="window.location.href='order.php?item=Grilled Tilapia'"><td>🐟 Fish</td><td>Grilled Tilapia</td><td>Fresh tilapia with lemon herb sauce</td><td class="price">$18.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Salmon Steak'"><td>🐟 Fish</td><td>Salmon Steak</td><td>Atlantic salmon with garlic butter</td><td class="price">$26.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Whole Fried Fish'"><td>🐟 Fish</td><td>Whole Fried Fish</td><td>Crispy tilapia with spicy sauce</td><td class="price">$22.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Fresh Orange Juice'"><td>🧃 Fresh Juice</td><td>Fresh Orange Juice</td><td>100% natural orange</td><td class="price">$5.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Mango Tango'"><td>🧃 Fresh Juice</td><td>Mango Tango</td><td>Fresh mango blended</td><td class="price">$6.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Pineapple Splash'"><td>🧃 Fresh Juice</td><td>Pineapple Splash</td><td>Fresh pineapple juice</td><td class="price">$6.49</td></tr>
+                <tr onclick="window.location.href='order.php?item=Classic Mojito'"><td>🍸 Drink</td><td>Classic Mojito</td><td>Rum, mint, lime</td><td class="price">$12.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=House Red Wine'"><td>🍷 Drink</td><td>House Red Wine</td><td>Smooth Cabernet</td><td class="price">$14.99</td></tr>
+                <tr onclick="window.location.href='order.php?item=Rwandan Tea'"><td>☕ Drink</td><td>Rwandan Tea</td><td>Local premium tea</td><td class="price">$3.99</td></tr>
+            </tbody>
+        </table>
+        <div style="text-align:center; margin-top:30px;"><a href="order.php" class="btn btn-primary">Order Online</a></div>
+    </div></section>
+    <footer class="footer">... same ...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
